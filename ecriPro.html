@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Titan One' rel='stylesheet'>
+    <link rel="shortcut icon" href="/Assets/logo_site/logo-top.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉcriPro</title>
+    <script src="/Scripts_ecripro/config.js" defer></script>
+    <script src="/Scripts_ecripro/popup.js" defer></script>
+    <script src="/Scripts_ecripro/script.js" defer></script>
+    <script src="/Scripts_ecripro/main.js" defer></script>
+</head>
+
+<body>
+    <div id="scroll-container">
+        <div id="scroll-text">Ce site est en cours de création *-*.</div>
+    </div>
+    <header>
+        <!--///////////////////////////////////////////////top accueil//////////////////////////////////////////////////////////////-->
+        <div class="flex flex-center gap-20 top-site"><img src="/Assets/logo_site/logo-en-png.png" alt="logo-top">
+            <p class="titre">Le blog de Max's</p>
+        </div>
+        <div class="flex gap-20 accueil flex-center">
+            <div class="padding menu"><a class="disable" href="index.html">accueil</a></div>
+            <div class="padding menu"><a class="disable" href="snake-game.html">Snake-game</a></div>
+            <div class="padding menu"><a class="disable" href="les_bonnes_adresses.html">Les bonnes adresses</a></div>
+        </div>
+        <div class="titreEcritPro">
+            <h1>ÉcriPro</h1>
+            <h2>ÉcriPro est une application en ligne pour apprendre à taper plus vite au clavier.</h2>
+            <h3>Grâce à ÉcriPro décuplez votre vitesse et votre précision d'écriture.</h3>
+        </div>
+    </header>
+    <!--///////////////////////////////////////////////////body site///////////////////////////////////////////////////////////////////-->
+    <main>
+        <div class="zoneOptions">
+            <p>Choisissez votre option et tapez la proposition qui s'affiche dans le champ en-dessous.</p>
+            <div class="optionSource">
+                <input type="radio" name="optionSource" id="mots" value="1" checked>
+                <label for="mots">Mots</label>
+                <input type="radio" name="optionSource" id="phrases" value="2">
+                <label for="phrases">Phrases</label>
+            </div>
+        </div>
+
+        <div class="zoneProposition">
+            ÉcriPro
+        </div>
+
+        <div class="zoneSaisie">
+            <input type="text" id="inputEcriture" name="inputEcriture">
+            <button id="btnValiderMot">Valider</button>
+        </div>
+
+        <div class="zoneScore">
+            Votre score : <span>0</span>
+        </div>
+
+        <div class="zonePartage">
+            <button>Partager</button>
+        </div>
+
+    </main>
+    <!-- Popup de partage -->
+    <div class="popupBackground">
+        <div class="popup">
+            <div>Partagez votre score</div>
+            <form novalidate>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                <label for="email">Avec qui voulez-vous partager votre score ?</label>
+                <input type="email" id="email" name="email" placeholder="nom@domaine.com">
+                <button id="btnEnvoyerMail">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    <div>
+        <h4>Créé avec les cours d'OpenClassrooms. </h4>
+    </div>
+    <!--////////////////////////////////////////////////////footer/////////////////////////////////////////////////////////////////////-->
+    <footer>
+        <div>
+            <div>
+                <h5 class="flex flex-center">Contact</h5>
+                <div>
+                    <div class="flex logo-bot"><img class="logo-bottom" src="/Assets/logo_site/logo-en-png.png"
+                            alt="logo">
+                        <ul>
+                            <ol>
+                                <i class="fa-regular fa-envelope fa-flip fa-2xl" style="color: rgb(204, 155, 96);"></i>
+                                <a class="mail" href="mailto:maximesbaizero@gmail.com">Envoyer un email</a>
+                            </ol>
+                            <ol>
+                                <a class="social" href="https://www.linkedin.com/in/maxime-sbaizero-2606a0180"><i
+                                        class="fa-brands fa-linkedin fa-beat fa-2xl"
+                                        style="color: rgb(204, 155, 96);"></i> Maxime Sbaizero</a>
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-center-h">
+            Copyright © 2023 Le blog de Max's ALL Right Reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+@import url(/Styles/framework.css);
+@import url(/Styles/style.css);
+@import url(/Styles/Style_ecritpro.css);
+@import url(/Styles/style_snake.css);
+
+
+@media screen and (max-width: 739px) {
+
+    header .top-site p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    footer .logo-bottom {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    footer .logo-bot {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    footer h5 {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    main {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    main #btnValiderMot {
+        padding-right: 60px;
+    }
+
+    main .optionSource {
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper {
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .game-details {
+        font-size: 1rem;
+        padding: 15px 27px;
+    }
+
+    .controls {
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
