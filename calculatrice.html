@@ -8,15 +8,14 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/Styles/main.css">
-    <link rel="stylesheet" href="/Styles/style_snake.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake game</title>
-    <script src="/Script_snake/script.js" defer></script>
+    <title>Le blog de Max's</title>
     <script src="Script/scriptPage.js"></script>
+    <script src="/Script/scriptCalculatrice.js"></script>
 </head>
 
 <body>
@@ -29,29 +28,33 @@
             <p class="titre">Le blog de Max's</p>
         </div>
         <div class="flex gap-20 accueil flex-center">
-            <div class="padding menu"><a class="disable" href="index.html">accueil</a></div>
+            <div class="padding menu"><a class="disable" href="snake-game.html">Snake Game</a></div>
             <div class="padding menu"><a class="disable" href="ecriPro.html">ÉcriPro</a></div>
             <div class="padding menu"><a class="disable" href="les_bonnes_adresses.html">Les bonnes adresses</a></div>
         </div>
     </header>
     <!--///////////////////////////////////////////////////body site///////////////////////////////////////////////////////////////////-->
-    <div class="container">
-        <div class="wrapper">
-            <div class="game-details">
-                <Span class="score">Score: 0</Span>
-                <span class="high-score">high Score: 0</span>
-            </div>
-            <div class="play-board"></div>
-            <div class="controls">
-                <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
-                <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
-                <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
-                <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
-            </div>
+    <div class="calculatrice">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="addToDisplay('7')">7</button>
+            <button onclick="addToDisplay('8')">8</button>
+            <button onclick="addToDisplay('9')">9</button>
+            <button onclick="addToDisplay('+')">+</button>
+            <button onclick="addToDisplay('4')">4</button>
+            <button onclick="addToDisplay('5')">5</button>
+            <button onclick="addToDisplay('6')">6</button>
+            <button onclick="addToDisplay('-')">-</button>
+            <button onclick="addToDisplay('1')">1</button>
+            <button onclick="addToDisplay('2')">2</button>
+            <button onclick="addToDisplay('3')">3</button>
+            <button onclick="addToDisplay('*')">*</button>
+            <button onclick="addToDisplay('0')">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="addToDisplay('/')">/</button>
+            <button onclick="inchesToCm()">pouces en cm</button>
         </div>
-    </div>
-    <div>
-        <h4>Créer grâce aux tutoriels de Coding Nepal</h4>
     </div>
     <!--////////////////////////////////////////////////////footer/////////////////////////////////////////////////////////////////////-->
     <footer>
