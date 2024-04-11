@@ -114,6 +114,10 @@ color:rgb(204, 155, 96)
   color: rgb(204, 155, 96);
 }
 
+.langPro{
+  text-align: center;
+}
+
 .adresse{
     font-family: 'Titan One';
     font-size: 1.5rem;
