@@ -17,11 +17,18 @@ function calculate() {
     }
 }
 
-function inchesToCm(){
+function inchesToCm() {
     let display = document.getElementById('display')
-    if(display) {
+    if (display) {
         const inches = parseFloat(display.value)
         const cm = inches * 2.54
         display.value = cm.toFixed(2) + ' cm';
     }
+}
+
+function calculerPourcentage() {
+    let valeur = parseFloat(document.getElementById("valeur").value)
+    let pourcentage = parseFloat(document.getElementById("pourcentage").value)
+    let resultat = (valeur * pourcentage) / 100
+    document.getElementById("resultat").innerText = pourcentage + "% de " + valeur + " est égal à " + resultat
 }

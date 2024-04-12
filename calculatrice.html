@@ -53,8 +53,15 @@
             <button onclick="clearDisplay()">C</button>
             <button onclick="calculate()">=</button>
             <button onclick="addToDisplay('/')">/</button>
+            <button onclick="addToDisplay('.')">.</button>
             <button onclick="inchesToCm()">pouces en cm</button>
         </div>
+    </div>
+    <div class="calculator">
+        <span>Valeur de départ</span><input type="number" id="valeur"> 
+        <span>Pourcentage</span><input type="number" id="pourcentage"> 
+        <button onclick="calculerPourcentage()">Calculer</button>
+        <p id="resultat"></p>
     </div>
     <!--////////////////////////////////////////////////////footer/////////////////////////////////////////////////////////////////////-->
     <footer>
