@@ -6,40 +6,32 @@
   }
   
   #scroll-text {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
     /* animation properties */
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    
-    -moz-animation: my-animation 30s linear infinite;
-    -webkit-animation: my-animation 30s linear infinite;
     animation: my-animation 30s linear infinite;
   }
   
+  
+  /*trois version pour assure la compatibilité pour les navigateur plus anciens */
   /* for Firefox */
-  @-moz-keyframes my-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
-  }
-  
-  /* for Chrome */
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
-  }
-  
-  @keyframes my-animation {
-    from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
-  }
+@-moz-keyframes my-animation {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+/* for Chrome and Safari */
+@-webkit-keyframes my-animation {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+/* Standard syntax */
+@keyframes my-animation {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
 
 .top-site {
     background-color: rgb(204, 155, 96);
