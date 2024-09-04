@@ -87,9 +87,7 @@ setIntervalId = setInterval(initGame, 150);
 document.addEventListener("keyup", changeDirection);
 
 document.addEventListener("keydown", function(event) {
-    // Vérifie si l'une des touches fléchées est pressée
     if (event.key === "ArrowUp" || event.key === "ArrowDown" || event.key === "ArrowLeft" || event.key === "ArrowRight") {
-      // Empêche le comportement par défaut de la touche (c'est-à-dire le défilement)
       event.preventDefault();
     }
   });
