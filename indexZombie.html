@@ -13,7 +13,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le blog de Max's</title>
+    <title>Zombie Game</title>
+    <link rel="stylesheet" href="/Styles/styleZombie.css">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
             <p class="titre">Le blog de Max's</p>
         </div>
         <div class="flex gap-20 accueil flex-center">
-            <div class="padding menu"><a class="disable" href="indexZombie.html">Zombie Game</a></div>
+            <div class="padding menu"><a class="disable" href="index.html">accueil</a></div>
             <div class="padding menu"><a class="disable" href="snake-game.html">Snake Game</a></div>
             <div class="padding menu"><a class="disable" href="ecriPro.html">ÉcriPro</a></div>
             <div class="padding menu"><a class="disable" href="calculatrice.html">Calculatrice</a></div>
@@ -34,18 +35,8 @@
         </div>
     </header>
     <!--///////////////////////////////////////////////////body site///////////////////////////////////////////////////////////////////-->
-    <div>
-        <img width="100%" src="/Assets/cours_execute.png" alt="liste des cours executer">
-    </div>
-    <div>
-        <h2 class="prog">Mon programme de formation</h2>
-        <p class="margin">
-            Je suis Maxime Sbaizero, un développeur web passionné et autodidacte, doté d'un sens aigu de l'autonomie et de la rigueur. Curieux de nature, j'ai entrepris une reconversion professionnelle motivée par ma soif d'apprentissage et d'innovation technologique. Fort de mon sens de l'organisation et de ma capacité à travailler en équipe, je m'engage pleinement dans chaque projet pour en garantir le succès. Mon parcours témoigne de ma détermination à exceller dans le domaine du développement, où je m'efforce d'allier mes compétences techniques à ma créativité. Actuellement, je suis à la recherche d'une formation en tant que développeur web, où je pourrai mettre en pratique mes connaissances et acquérir de nouvelles compétences au sein d'un environnement dynamique et stimulant. Je suis convaincu que chaque défi représente une opportunité d'apprentissage et de croissance, et je suis impatient de contribuer à des projets innovants tout en continuant à me former.
-        </p>
-    </div>
-<div class="flex flex-end-h retour margin-top">
-    <a class="retour" href="index.html">Retour en haut de la page</a>
-</div>
+    <canvas id="gameCanvas" width="1000" height="1000"></canvas>
+    <script src="/Script/gameZombie.js"></script>
     <!--////////////////////////////////////////////////////footer/////////////////////////////////////////////////////////////////////-->
     <footer>
         <div>
