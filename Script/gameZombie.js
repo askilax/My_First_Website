@@ -3,15 +3,15 @@ const ctx = canvas.getContext('2d');
 
 // Charger les images pour les deux directions
 const playerImgRight = new Image();
-playerImgRight.src = '../assets/images/player-right.png';  // Image du joueur face droite
+playerImgRight.src = 'Assets/images/player-right.png';  // Image du joueur face droite
 
 const playerImgLeft = new Image();
-playerImgLeft.src = '../assets/images/player-left.png';  // Image du joueur face gauche
+playerImgLeft.src = 'Assets/images/player-left.png';  // Image du joueur face gauche
 
 let playerImg = playerImgRight; //le joueur regarde vers la droite
 
 const zombieImg = new Image();
-zombieImg.src = '../assets/images/zombie.png';
+zombieImg.src = 'Assets/images/zombie.png';
 
 // Paramètres du joueur
 const player = {
