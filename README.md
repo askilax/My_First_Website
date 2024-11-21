@@ -34,7 +34,7 @@ Ce site me permet de m'exprimer librement et de m'entraîner au développement w
 ## Contact
 
 Pour toute question, suggestion ou juste pour dire bonjour, vous pouvez me contacter via :
-- Email : maxime@leblogdemaxs.fr
+- Email : maximesbaizero@gmail.com
 
 ## Mon GitHub
 
